@@ -19,11 +19,11 @@ const ContactSection = () => {
               </p>
               
               <div className="flex flex-col gap-4">
-                <a href="mailto:hello@studio.com" className="flex items-center gap-4 text-white hover:text-purple-400 transition-colors group">
+                <a href="mailto:mdfuture.13@gmail.com" className="flex items-center gap-4 text-white hover:text-purple-400 transition-colors group">
                   <div className="p-4 bg-white/5 rounded-2xl border border-white/10 group-hover:bg-purple-500/20 transition-all">
                     <FiMail size={24} />
                   </div>
-                  <span className="text-lg font-bold">hello@studio.com</span>
+                  <span className="text-lg font-bold">mdfuture.13@gmail.com</span>
                 </a>
               </div>
 

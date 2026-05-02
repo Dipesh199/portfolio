@@ -13,7 +13,7 @@ const FeaturedGames = ({ onGameClick }) => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-black mb-4 tracking-tight"
           >
-            FEATURED <span className="text-purple-500">TITLES</span>
+            MY DEVELOPED <span className="text-purple-500">GAMES</span>
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0, width: 0 }}

@@ -11,10 +11,10 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-black mb-6">BEHIND THE <span className="text-blue-500">PIXELS</span></h2>
+            <h2 className="text-4xl md:text-5xl font-black mb-6">BEHIND THE <span className="text-blue-500">GAMES</span></h2>
             <p className="text-xl text-gray-400 leading-relaxed">
-              We are a boutique game development studio dedicated to creating high-fidelity mobile experiences. 
-              Our team combines technical excellence with artistic vision to deliver games that resonate with players worldwide.
+              I am Dipesh Korat, an independent game developer dedicated to creating high-fidelity mobile experiences. 
+              I combine technical excellence with artistic vision to deliver games that resonate with players worldwide.
             </p>
           </motion.div>
 
