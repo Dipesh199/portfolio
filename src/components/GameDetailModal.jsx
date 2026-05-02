@@ -78,64 +78,59 @@ const GameDetailModal = ({ game, onClose }) => {
             </div>
           </div>
 
-          {/* Main Layout Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12">
-            {/* Left Column: Description & Screenshots */}
-            <div className="lg:col-span-2 space-y-12">
-              <section>
-                <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                  <span className="w-8 h-1 bg-purple-500 rounded-full" />
-                  Visual Showcase
-                </h3>
-                <ScreenshotCarousel screenshots={game.screenshots} />
-              </section>
+          {/* Visual Showcase - Full Width */}
+          <section className="mt-12">
+            <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
+              <span className="w-8 h-1 bg-purple-500 rounded-full" />
+              Visual Showcase
+            </h3>
+            <ScreenshotCarousel screenshots={game.screenshots} />
+          </section>
 
-              <section>
-                <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-                  <span className="w-8 h-1 bg-purple-500 rounded-full" />
-                  Key Features
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {game.features.map((feature, i) => (
-                    <div key={i} className="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
-                      <div className={`p-2 rounded-lg bg-gradient-to-br ${game.theme.primary}`}>
-                        <FiChevronRight className="text-white" />
-                      </div>
-                      <span className="font-semibold text-gray-200">{feature}</span>
+          {/* Key Features and CTA - Side by Side */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 items-start">
+            <section className="space-y-8">
+              <h3 className="text-2xl font-bold flex items-center gap-3">
+                <span className="w-8 h-1 bg-purple-500 rounded-full" />
+                Key Features
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4">
+                {game.features.map((feature, i) => (
+                  <div key={i} className="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
+                    <div className={`p-2 rounded-lg bg-gradient-to-br ${game.theme.primary}`}>
+                      <FiChevronRight className="text-white" />
                     </div>
-                  ))}
-                </div>
-              </section>
-            </div>
-
-            {/* Right Column: CTA & Additional Info */}
-            <div className="space-y-8">
-              <div className="p-8 bg-white/5 rounded-[2rem] border border-white/10 backdrop-blur-sm sticky top-8">
-                <h4 className="text-xl font-bold mb-6">Experience Now</h4>
-                <div className="space-y-4">
-                  <motion.a
-                    href={game.playStoreLink}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className={`flex items-center justify-center gap-3 w-full py-4 bg-gradient-to-r ${game.theme.primary} rounded-2xl font-bold text-white shadow-xl`}
-                  >
-                    <FiPlayCircle size={24} />
-                    Get it on Play Store
-                  </motion.a>
-                  <button className="w-full py-4 bg-white/5 hover:bg-white/10 rounded-2xl font-bold text-white border border-white/10 transition-colors">
-                    Official Website
-                  </button>
-                </div>
-
-                <div className="mt-8 pt-8 border-t border-white/5 space-y-4">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">Category</span>
-                    <span className="text-white font-medium">{game.category}</span>
+                    <span className="font-semibold text-gray-200">{feature}</span>
                   </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">Last Update</span>
-                    <span className="text-white font-medium">May 2024</span>
-                  </div>
+                ))}
+              </div>
+            </section>
+
+            <div className="p-8 bg-white/5 rounded-[2rem] border border-white/10 backdrop-blur-sm">
+              <h4 className="text-xl font-bold mb-6">Experience Now</h4>
+              <div className="space-y-4">
+                <motion.a
+                  href={game.playStoreLink}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className={`flex items-center justify-center gap-3 w-full py-4 bg-gradient-to-r ${game.theme.primary} rounded-2xl font-bold text-white shadow-xl`}
+                >
+                  <FiPlayCircle size={24} />
+                  Get it on Play Store
+                </motion.a>
+                <button className="w-full py-4 bg-white/5 hover:bg-white/10 rounded-2xl font-bold text-white border border-white/10 transition-colors">
+                  Official Website
+                </button>
+              </div>
+
+              <div className="mt-8 pt-8 border-t border-white/5 space-y-4">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">Category</span>
+                  <span className="text-white font-medium">{game.category}</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">Last Update</span>
+                  <span className="text-white font-medium">May 2024</span>
                 </div>
               </div>
             </div>

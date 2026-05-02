@@ -21,7 +21,7 @@ const AboutSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { label: 'Innovation', desc: 'Pushing mobile hardware to its absolute limits.' },
-              { label: 'Quality', desc: 'Pixel-perfect UI and fluid 60FPS gameplay.' },
+              { label: 'Quality', desc: 'Pixel-perfect UI and fluid 60/120 FPS gameplay.' },
               { label: 'Passion', desc: 'Built by gamers, for gamers, with love.' },
             ].map((item, index) => (
               <motion.div

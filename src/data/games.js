@@ -36,11 +36,11 @@ export const games = [
   },
   {
     id: 'block-blaster',
-    title: 'Block Blaster',
-    shortDescription: 'A visually stunning puzzle game that tests your brain and reflexes.',
+    title: 'Block Blaster - Classic',
+    shortDescription: 'Smash blocks, clear lines & blast your way to the top! Free puzzle fun! 🧩🔥',
     category: 'Puzzle',
     status: 'Available',
-    playStoreLink: '#',
+    playStoreLink: 'https://play.google.com/store/apps/details?id=com.blockpuzzle.iqubepro',
     theme: {
       primary: 'from-blue-500 to-cyan-400',
       glow: 'shadow-blue-500/50',
@@ -56,15 +56,17 @@ export const games = [
       '/games/Block Blaster - Puzzle Game/5.png'
     ],
     features: [
-      'Mind-bending Puzzles',
-      'Sleek Neon UI',
-      'Endless Modes',
-      'Global Leaderboards'
+      'Classic, Timed, Zen & Blaster Modes',
+      'No Time Limits - Play at your pace',
+      'Brain Training with hundreds of levels',
+      'Play Offline - No WiFi needed',
+      'Global Leaderboards',
+      'Auto-save progress'
     ],
     stats: {
-      downloads: '500K+',
-      rating: '4.6',
-      reviews: '45K+'
+      downloads: '10+',
+      rating: '5.0',
+      reviews: '2'
     }
   },
   {
