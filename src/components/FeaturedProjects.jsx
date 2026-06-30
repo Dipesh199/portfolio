@@ -4,10 +4,8 @@ import ProjectCard from './ProjectCard';
 
 const FeaturedProjects = ({ onProjectClick }) => {
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="pt-40 pb-24">
       <div className="container mx-auto px-6">
-
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
           {projects.map((project, index) => (
             <motion.div

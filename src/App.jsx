@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import FeaturedProjects from './components/FeaturedProjects';
 import ProjectDetailModal from './components/ProjectDetailModal';
 import AboutSection from './components/AboutSection';
-import ResumeSection from './components/ResumeSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
@@ -31,7 +30,6 @@ function App() {
       
       <main>
         <FeaturedProjects onProjectClick={setSelectedProject} />
-        <ResumeSection />
         <ContactSection />
       </main>
 
