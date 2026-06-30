@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import AnimatedBackground from './components/AnimatedBackground';
 import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
 import FeaturedProjects from './components/FeaturedProjects';
 import ProjectDetailModal from './components/ProjectDetailModal';
 import AboutSection from './components/AboutSection';
@@ -31,7 +30,6 @@ function App() {
       <Navbar />
       
       <main>
-        <HeroSection />
         <FeaturedProjects onProjectClick={setSelectedProject} />
         <ResumeSection />
         <ContactSection />
