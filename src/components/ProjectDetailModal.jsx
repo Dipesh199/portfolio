@@ -97,7 +97,7 @@ const ProjectDetailModal = ({ project, onClose }) => {
               <span className={`w-8 h-1 rounded-full bg-gradient-to-r ${project.theme.primary}`} />
               Visual Showcase
             </h3>
-            <ScreenshotCarousel screenshots={project.screenshots} />
+            <ScreenshotCarousel screenshots={project.screenshots} isWeb={isWeb} />
           </section>
 
           {/* Key Features and CTA - Side by Side */}

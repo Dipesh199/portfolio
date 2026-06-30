@@ -1,7 +1,7 @@
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
 
-const ScreenshotCarousel = ({ screenshots }) => {
+const ScreenshotCarousel = ({ screenshots, isWeb = false }) => {
   const containerRef = useRef(null);
   const [constraints, setConstraints] = useState({ left: 0, right: 0 });
 
@@ -26,7 +26,7 @@ const ScreenshotCarousel = ({ screenshots }) => {
           <motion.div
             key={index}
             whileHover={{ scale: 1.02 }}
-            className="flex-shrink-0 w-[200px] md:w-[280px] aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/50 select-none bg-white/5"
+            className={`flex-shrink-0 ${isWeb ? 'w-[300px] md:w-[700px] aspect-[16/9]' : 'w-[200px] md:w-[280px] aspect-[9/16]'} rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/50 select-none bg-white/5`}
           >
             <img 
               src={src} 
