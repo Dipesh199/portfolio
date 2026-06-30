@@ -32,13 +32,6 @@ const HeroSection = () => {
         animate="visible"
         className="container mx-auto px-6 text-center z-10"
       >
-        <motion.span
-          variants={itemVariants}
-          className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-white/5 border border-white/10 rounded-full text-purple-400 backdrop-blur-sm"
-        >
-          Premium Mobile Experiences
-        </motion.span>
-
         <motion.h1
           variants={itemVariants}
           className="text-5xl md:text-8xl font-black mb-6 tracking-tight leading-none"
@@ -51,7 +44,7 @@ const HeroSection = () => {
           variants={itemVariants}
           className="max-w-2xl mx-auto text-lg md:text-xl text-gray-400 mb-10 font-medium"
         >
-          We create immersive, visually stunning mobile games that push the boundaries of mobile hardware and gameplay.
+          We create immersive, visually stunning digital experiences that push the boundaries of modern technology and design.
         </motion.p>
 
         <motion.div
@@ -59,20 +52,13 @@ const HeroSection = () => {
           className="flex flex-col md:flex-row items-center justify-center gap-4"
         >
           <motion.a
-            href="#games"
+            href="#projects"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-10 py-4 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full font-bold text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 transition-all"
           >
             Explore Projects
           </motion.a>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-10 py-4 bg-white/5 border border-white/10 rounded-full font-bold text-white backdrop-blur-md hover:bg-white/10 transition-all"
-          >
-            Our Story
-          </motion.button>
         </motion.div>
       </motion.div>
 
