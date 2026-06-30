@@ -1,6 +1,80 @@
-export const games = [
+export const projects = [
+  {
+    id: 'hollyflixhd',
+    type: 'web',
+    title: 'HollyFlixHD',
+    shortDescription: 'A premium movie streaming and discovery platform with a sleek user interface.',
+    category: 'Web App',
+    status: 'Live',
+    websiteLink: '#',
+    theme: {
+      primary: 'from-red-600 to-pink-600',
+      glow: 'shadow-red-500/50',
+      text: 'text-red-400'
+    },
+    icon: 'websites/HollyFlixHD/Homepage.png',
+    banner: 'websites/HollyFlixHD/Homepage.png',
+    screenshots: [
+      'websites/HollyFlixHD/Homepage.png',
+      'websites/HollyFlixHD/MovieDetailsPage.png',
+      'websites/HollyFlixHD/AnotherHomepage.png'
+    ],
+    features: [
+      'Dynamic Movie Discovery',
+      'Detailed Information Pages',
+      'Responsive Modern UI',
+      'Sleek Dark Mode Design'
+    ],
+    stats: {
+      users: '10K+',
+      rating: '4.9',
+      uptime: '99.9%'
+    }
+  },
+  {
+    id: 'vxqn',
+    type: 'web',
+    title: 'VXQN Platform',
+    shortDescription: 'A comprehensive management platform tailored for modern businesses.',
+    category: 'Web App',
+    status: 'Live',
+    websiteLink: '#',
+    theme: {
+      primary: 'from-emerald-500 to-teal-500',
+      glow: 'shadow-emerald-500/50',
+      text: 'text-emerald-400'
+    },
+    icon: 'websites/VXQN/Screenshot 2026-06-30 135144.png',
+    banner: 'websites/VXQN/Screenshot 2026-06-30 135153.png',
+    screenshots: [
+      'websites/VXQN/Screenshot 2026-06-30 135144.png',
+      'websites/VXQN/Screenshot 2026-06-30 135153.png',
+      'websites/VXQN/Screenshot 2026-06-30 135203.png',
+      'websites/VXQN/Screenshot 2026-06-30 135213.png',
+      'websites/VXQN/Screenshot 2026-06-30 135220.png',
+      'websites/VXQN/Screenshot 2026-06-30 135228.png',
+      'websites/VXQN/Screenshot 2026-06-30 135235.png',
+      'websites/VXQN/Screenshot 2026-06-30 135242.png',
+      'websites/VXQN/Screenshot 2026-06-30 135251.png',
+      'websites/VXQN/Screenshot 2026-06-30 135257.png',
+      'websites/VXQN/Screenshot 2026-06-30 135304.png',
+      'websites/VXQN/Screenshot 2026-06-30 135322.png'
+    ],
+    features: [
+      'Advanced Dashboard Analytics',
+      'Seamless Data Integration',
+      'Real-time Updates',
+      'Secure Access Control'
+    ],
+    stats: {
+      users: '5K+',
+      rating: '4.8',
+      uptime: '99.9%'
+    }
+  },
   {
     id: 'lumora',
+    type: 'game',
     title: 'Lumora: Crystal Saga',
     shortDescription: 'Embark on a glowing crystal adventure through magical realms.',
     category: 'Action / Adventure',
@@ -36,6 +110,7 @@ export const games = [
   },
   {
     id: 'block-blaster',
+    type: 'game',
     title: 'Block Blaster - Classic',
     shortDescription: 'Smash blocks, clear lines & blast your way to the top! Free puzzle fun! 🧩🔥',
     category: 'Puzzle',
@@ -71,6 +146,7 @@ export const games = [
   },
   {
     id: 'bolt-master',
+    type: 'game',
     title: 'Bolt Master: Buddy Quest',
     shortDescription: 'Unscrew and solve mechanical puzzles in this unique brain teaser.',
     category: 'Puzzle / Logic',
@@ -106,6 +182,7 @@ export const games = [
   },
   {
     id: 'fruit-block',
+    type: 'game',
     title: 'Fruit Blast Factory',
     shortDescription: 'Juicy matching action with explosive power-ups and vibrant graphics.',
     category: 'Casual / Match 3',

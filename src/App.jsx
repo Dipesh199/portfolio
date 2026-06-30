@@ -3,18 +3,18 @@ import { AnimatePresence } from 'framer-motion';
 import AnimatedBackground from './components/AnimatedBackground';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import FeaturedGames from './components/FeaturedGames';
-import GameDetailModal from './components/GameDetailModal';
+import FeaturedProjects from './components/FeaturedProjects';
+import ProjectDetailModal from './components/ProjectDetailModal';
 import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
 function App() {
-  const [selectedGame, setSelectedGame] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   // Handle body scroll lock
   useEffect(() => {
-    if (selectedGame) {
+    if (selectedProject) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
@@ -22,7 +22,7 @@ function App() {
     return () => {
       document.body.style.overflow = 'unset';
     };
-  }, [selectedGame]);
+  }, [selectedProject]);
 
   return (
     <div className="min-h-screen text-white selection:bg-purple-500/30">
@@ -31,7 +31,7 @@ function App() {
       
       <main>
         <HeroSection />
-        <FeaturedGames onGameClick={setSelectedGame} />
+        <FeaturedProjects onProjectClick={setSelectedProject} />
         <AboutSection />
         <ContactSection />
       </main>
@@ -39,10 +39,10 @@ function App() {
       <Footer />
 
       <AnimatePresence>
-        {selectedGame && (
-          <GameDetailModal 
-            game={selectedGame} 
-            onClose={() => setSelectedGame(null)} 
+        {selectedProject && (
+          <ProjectDetailModal 
+            project={selectedProject} 
+            onClose={() => setSelectedProject(null)} 
           />
         )}
       </AnimatePresence>

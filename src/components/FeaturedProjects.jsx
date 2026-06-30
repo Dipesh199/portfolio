@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
-import { games } from '../data/games';
-import GameCard from './GameCard';
+import { projects } from '../data/projects';
+import ProjectCard from './ProjectCard';
 
-const FeaturedGames = ({ onGameClick }) => {
+const FeaturedProjects = ({ onProjectClick }) => {
   return (
-    <section id="games" className="py-24">
+    <section id="projects" className="py-24">
       <div className="container mx-auto px-6">
         <div className="mb-16">
           <motion.h2 
@@ -13,7 +13,7 @@ const FeaturedGames = ({ onGameClick }) => {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-black mb-4 tracking-tight"
           >
-            MY DEVELOPED <span className="text-purple-500">GAMES</span>
+            MY <span className="text-purple-500">PROJECTS</span>
           </motion.h2>
           <motion.div 
             initial={{ opacity: 0, width: 0 }}
@@ -25,17 +25,17 @@ const FeaturedGames = ({ onGameClick }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
-          {games.map((game, index) => (
+          {projects.map((project, index) => (
             <motion.div
-              key={game.id}
+              key={project.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <GameCard 
-                game={game} 
-                onClick={() => onGameClick(game)} 
+              <ProjectCard 
+                project={project} 
+                onClick={() => onProjectClick(project)} 
               />
             </motion.div>
           ))}
@@ -45,4 +45,4 @@ const FeaturedGames = ({ onGameClick }) => {
   );
 };
 
-export default FeaturedGames;
+export default FeaturedProjects;
